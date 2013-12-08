@@ -1,0 +1,42 @@
+body {
+    height:100%;
+    width:100%;
+    background:url(bg-grid-alt.png) #d7d7d7;
+}
+header {
+    background: #424242;
+    margin-bottom: 50px;
+}
+
+header .upper {
+    height: 90px;
+}
+
+header .lower {
+    background: black;
+    height: 38px;
+    font-size: 19px;
+    font-family: 'FontSite Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.content {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.articles {
+    position: relative;
+}
+
+article {
+    -webkit-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+    box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+    background: #f9f9f9;
+    margin-bottom: 35px;
+    padding: 25px;
+    position: relative;
+}
