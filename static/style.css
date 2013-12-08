@@ -39,14 +39,29 @@ ul {
 header {
     background: #424242;
     margin-bottom: 20px;
+    background-image:url('http://i.imgur.com/2c76lLm.png');background-position-y: 100%;
+
 }
 
 header .upper {
     height: 75px;
+    max-width: 1140px; margin-left: auto; margin-right: auto;
+}
+
+header .lower {
+    background: black;
+    height: 38px;
+    font-size: 19px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    max-width: 1140px; margin-left: auto; margin-right: auto;
+
 }
 
 .social {
-    margin: 5px 10px 0 0;
+    margin: 5px 0 0 0;
     float: right;
     display: inline-block;
     height: 26px;
@@ -55,11 +70,13 @@ header .upper {
 
 .happening-now {
     color: white;
+    float: right;
     font: 19px "Helvetica Neue",Helvetica,Arial,sans-serif;
-    position: absolute;
     text-transform: uppercase;
-    right: 20px;
-    top: 40px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }
 
 .happening-now .hilight {
@@ -83,16 +100,6 @@ header .upper {
     padding: 25px;
 }
 
-header .lower {
-    background: black;
-    height: 38px;
-    font-size: 19px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: white;
-    text-align: left;
-    text-transform: uppercase;
-    width: 1140px;margin-left: auto;margin-right: auto;
-}
 
 .logo {
     width: 191px;
@@ -210,7 +217,7 @@ article {
 .footer {
     background-color: black;
     color: white;
-    position:absolute;
+    position:fixed;
     bottom:0;
     width:100%;
     height:30px;
