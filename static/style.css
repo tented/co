@@ -33,10 +33,7 @@ ul {
 .btn.small, button[type='submit'].small {
     font-size: 16px;
     padding: 5px 7px;
-}
-
-.btn.small:before {
-    background:url(email.png);
+    display: inline-block;
 }
 
 header {
