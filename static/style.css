@@ -1,6 +1,7 @@
 body {
     height:100%;
     width:100%;
+    min-width: 950px;
     margin: 0;
     background:url(bg-tent.png) #d7d7d7;
     font: normal 13px/18px Arial,Helvetica,sans-serif;
@@ -40,7 +41,7 @@ ul {
 
 header {
     background: #424242;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 header .upper {
@@ -61,11 +62,21 @@ header .upper {
     position: absolute;
     text-transform: uppercase;
     right: 20px;
-    top: 45px;
+    top: 75px;
 }
 
 .happening-now .hilight {
     color: #eae71f;
+}
+
+.top-ad {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 30px;
+}
+.side-ad {
+    float: right;
+    margin-bottom: 50px;
 }
 
 header .lower {
@@ -136,6 +147,7 @@ header .lower {
 
 .articles {
     float: left;
+    position: relative;
     width: 65%;
 }
 
@@ -169,6 +181,7 @@ article {
 
 .sidebar {
     float: right;
+    position: relative;
     width: 25%;
     -webkit-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
     -moz-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
