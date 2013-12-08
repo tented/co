@@ -1,15 +1,18 @@
 body {
     height:100%;
     width:100%;
+    margin: 0;
     background:url(bg-grid-alt.png) #d7d7d7;
+    font: normal 13px/18px Arial,Helvetica,sans-serif;
 }
+
 header {
     background: #424242;
     margin-bottom: 50px;
 }
 
 header .upper {
-    height: 90px;
+    height: 120px;
 }
 
 header .lower {
@@ -22,13 +25,56 @@ header .lower {
     text-transform: uppercase;
 }
 
+.logo {
+    width: 280px;
+    height: auto;
+    top: -119px;
+    left: -1px;
+    margin: 0 20px 0 0;
+    position: relative;
+    z-index: 3;
+}
+
+.nav {
+    font: 21px/38px "FontSite Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+}
+
+.articles-header {
+    background: #313436;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font: 16px/30px "FontSite Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    left: 25px;
+    padding: 0 14px;
+    position: absolute;
+    top: -20px;
+    z-index: 2;
+}
+
+.sidebar-header {
+    background: #313436;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font: 16px/30px "FontSite Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0 14px;
+    position: absolute;
+    top: -20px;
+    z-index: 2;
+}
+
 .content {
-    margin-bottom: 50px;
+    margin: 0 30px 50px 30px;
     position: relative;
 }
 
 .articles {
-    position: relative;
+    float: left;
+    width: 65%;
 }
 
 article {
@@ -38,5 +84,34 @@ article {
     background: #f9f9f9;
     margin-bottom: 35px;
     padding: 25px;
-    position: relative;
+}
+
+.article-header {
+    font-size: 32px;
+    font: 42px/1 "NimbusSansDCondBold","HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.article-byline {
+    display: block;
+    margin: 10px 0 20px;
+    color: #666;
+    font: normal 15px/1 "NimbusSansDCondBold","HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.article-content {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    word-wrap: break-word;
+}
+
+.sidebar {
+    float: right;
+    width: 25%;
+    -webkit-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+    box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+    background: #f9f9f9;
+    margin-bottom: 35px;
+    padding: 25px;
 }
