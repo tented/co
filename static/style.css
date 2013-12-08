@@ -42,7 +42,7 @@ header {
 }
 
 header .upper {
-    height: 120px;
+    height: 75px;
 }
 
 .social {
@@ -59,7 +59,7 @@ header .upper {
     position: absolute;
     text-transform: uppercase;
     right: 20px;
-    top: 75px;
+    top: 40px;
 }
 
 .happening-now .hilight {
@@ -91,14 +91,15 @@ header .lower {
     color: white;
     text-align: left;
     text-transform: uppercase;
+    width: 1140px;margin-left: auto;margin-right: auto;
 }
 
 .logo {
-    width: 280px;
+    width: 191px;
     height: auto;
-    top: -119px;
+    top: -70px;
     left: -1px;
-    margin: 0 20px 0 0;
+    margin: 0 20px 0 25px;
     position: relative;
     z-index: 3;
 }
