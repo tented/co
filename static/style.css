@@ -1,7 +1,6 @@
 body {
     height:100%;
     width:100%;
-    /*min-width: 1060px;*/
     margin: 0;
     background:url(bg-tent.png) #d7d7d7;
     font: normal 13px/18px Arial,Helvetica,sans-serif;
@@ -34,31 +33,35 @@ ul {
     font-size: 16px;
     padding: 5px 7px;
     display: inline-block;
+    margin-right: 7px;
 }
 
 header {
     background: #424242;
     margin-bottom: 20px;
-    background-image:url('http://i.imgur.com/2c76lLm.png');
+    background-image:url('long-bar.png');
     background-position-y: 100%;
-
 }
 
 header .upper {
     height: 75px;
     max-width: 1140px; margin-left: auto; margin-right: auto;
+    min-width: 250px;
+    overflow: hidden;
+    background: #424242;
 }
 
 header .lower {
     background: black;
-    height: 38px;
     font-size: 19px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: white;
     text-align: left;
     text-transform: uppercase;
     max-width: 1140px; margin-left: auto; margin-right: auto;
-
+    min-width: 350px;
+    position: relative;
+    padding-left: 10px;
 }
 
 .social {
@@ -80,17 +83,39 @@ header .lower {
     margin-top: 40px;
 }
 
+@media (max-width: 950px){
+    .happening-now{
+    font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+}
+
+@media (max-width: 730px){
+    .happening-now{
+    font: 10px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+}
+
+@media (max-width: 630px){
+    .happening-now{
+    display: none;
+    }
+}
+
 .happening-now .hilight {
     color: #eae71f;
 }
 
+.top-ad  img {
+    width: 100%
+}
+
 .top-ad {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
+    max-width: 728px;
 }
 .side-ad {
-    float: right;
     margin-bottom: 50px;
     position: relative;
     -webkit-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
@@ -99,6 +124,35 @@ header .lower {
     background: white;
     margin-bottom: 35px;
     padding: 25px;
+    max-width: 300px;
+    min-width: 250px;
+}
+
+@media (max-width: 900px){
+    .side-ad{
+        max-width: 100%
+    }
+}
+
+.right-column{
+    max-width: 350px;
+    float:right;
+    position: absolute;
+    margin-right: 10px;
+    right: 0px;
+}
+
+@media (max-width: 900px){
+    .right-column{
+        position: relative;
+        max-width: 100%;
+        margin-right: 0px;
+        float: none;
+    }
+}
+
+.side-ad img{
+    width: 100%;
 }
 
 
@@ -106,9 +160,8 @@ header .lower {
     width: 191px;
     height: auto;
     top: -70px;
-    left: -1px;
-    margin: 0 20px 0 25px;
-    position: relative;
+    left: 10px;
+    position: absolute;
     z-index: 3;
 }
 
@@ -117,6 +170,15 @@ header .lower {
     vertical-align: top;
     display: inline-block;
     height: 100%;
+    padding-left: 200px;
+}
+
+@media (max-width: 650px){
+    .nav {
+        padding-left: 0;
+        padding-top: 50px;
+        text-align: center;
+    }
 }
 
 .nav-link {
@@ -154,18 +216,29 @@ header .lower {
 }
 
 .content {
-    width: 1140px;
+    max-width: 1140px;
+    min-width: 350px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1140px;
-    padding: 30px;
-
+    padding: 10px;
+    position: relative;
 }
 
 .articles {
     float: left;
     position: relative;
-    width: 65%;
+    max-width: 750px;
+    min-width: 350px;
+    margin-right: 360px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 900px){
+    .articles{
+        margin-right: 0px;
+        float: none;
+        max-width: 100%
+    }
 }
 
 article {
@@ -197,9 +270,7 @@ article {
 }
 
 .sidebar {
-    float: right;
     position: relative;
-    width: 25%;
     -webkit-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
     -moz-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
     box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
@@ -222,11 +293,49 @@ article {
     position:fixed;
     bottom:0;
     width:100%;
-    height:30px;
+    min-height: 30px;
+    min-width:350px;
+}
+
+@media (max-width: 900px){
+    .footer{
+        position:relative;
+    }
 }
 
 .footer-content {
     color: gray;
     text-align: right;
-    margin: 5px 20px 0 0 ;
+    padding: 5px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-img-container{
+    max-width: 750px;
+}
+
+.article-img-container img{
+    width: 100%;
+}
+
+.article-img-container-float-right{
+    max-width: 450px;
+    float: right;
+    padding-left: 10px;
+}
+
+.article-img-container-float-right img{
+    width: 100%;
+}
+
+.footer-links{
+    float: right
+}
+
+@media (max-width: 900px){
+    .footer-links{
+    float: left;
+    }
 }
