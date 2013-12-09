@@ -256,14 +256,14 @@ article {
 
 .article-header {
     font-size: 32px;
-    font: 42px/1 "Open Sans Condensed Bold","NimbusSansDCondBold","HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 42px/1 "Open Sans Condensed","NimbusSansDCondBold","HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .article-byline {
     display: block;
     margin: 10px 0 20px;
     color: #666;
-    font: normal 15px/1 "Open Sans Condensed Bold","NimbusSansDCondBold","HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: normal 15px/1 "Open Sans Condensed","NimbusSansDCondBold","HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .article-content {
