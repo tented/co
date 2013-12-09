@@ -105,17 +105,17 @@ header .lower {
     color: #eae71f;
 }
 
-.top-ad  img {
+.top-cat  img {
     width: 100%
 }
 
-.top-ad {
+.top-cat {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
     max-width: 728px;
 }
-.side-ad {
+.side-cat {
     margin-bottom: 50px;
     position: relative;
     -webkit-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
@@ -129,7 +129,7 @@ header .lower {
 }
 
 @media (max-width: 900px){
-    .side-ad{
+    .side-cat{
         max-width: 100%
     }
 }
@@ -151,7 +151,7 @@ header .lower {
     }
 }
 
-.side-ad img{
+.side-cat img{
     width: 100%;
 }
 
