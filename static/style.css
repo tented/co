@@ -339,3 +339,5 @@ article {
     float: left;
     }
 }
+
+article a {color: orange !important;}
