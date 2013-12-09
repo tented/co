@@ -190,6 +190,10 @@ header .lower {
     color: #eae71f;
 }
 
+article a {
+    color: orange;
+}
+
 .articles-header {
     background: #313436;
     display: inline-block;
@@ -339,5 +343,3 @@ article {
     float: left;
     }
 }
-
-article a {color: orange !important;}
