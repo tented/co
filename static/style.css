@@ -23,7 +23,7 @@ ul {
     border: 0;
     color: white;
     cursor: pointer;
-    font: 20px/1em "FontSite Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 20px/1em "Open Sans Condensed",Helvetica,Arial,sans-serif;
     position: relative;
     padding: 5px 10px;
     text-transform: uppercase;
@@ -54,7 +54,7 @@ header .upper {
 header .lower {
     background: black;
     font-size: 19px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans Condensed',Helvetica, Arial, sans-serif;
     color: white;
     text-align: left;
     text-transform: uppercase;
@@ -75,7 +75,7 @@ header .lower {
 .happening-now {
     color: white;
     float: right;
-    font: 19px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 19px "Open Sans Condensed",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     max-width: 1140px;
     margin-left: auto;
@@ -85,13 +85,13 @@ header .lower {
 
 @media (max-width: 950px){
     .happening-now{
-    font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 14px "Open Sans Condensed",Helvetica,Arial,sans-serif;
     }
 }
 
 @media (max-width: 730px){
     .happening-now{
-    font: 10px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 10px "Open Sans Condensed",Helvetica,Arial,sans-serif;
     }
 }
 
@@ -166,7 +166,7 @@ header .lower {
 }
 
 .nav {
-    font: 19px/38px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 19px/38px "Open Sans Condensed",Helvetica,Arial,sans-serif;
     vertical-align: top;
     display: inline-block;
     height: 100%;
@@ -199,7 +199,7 @@ article a {
     display: inline-block;
     color: white;
     text-transform: uppercase;
-    font: 16px/30px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 16px/30px "Open Sans Condensed",Helvetica,Arial,sans-serif;
     left: 25px;
     padding: 0 14px;
     position: absolute;
@@ -212,7 +212,7 @@ article a {
     display: inline-block;
     color: white;
     text-transform: uppercase;
-    font: 16px/30px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 16px/30px "Open Sans Condensed",Helvetica,Arial,sans-serif;
     padding: 0 14px;
     position: absolute;
     top: -20px;
@@ -256,14 +256,14 @@ article {
 
 .article-header {
     font-size: 32px;
-    font: 42px/1 "NimbusSansDCondBold","HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 42px/1 "Open Sans Condensed Bold","NimbusSansDCondBold","HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .article-byline {
     display: block;
     margin: 10px 0 20px;
     color: #666;
-    font: normal 15px/1 "NimbusSansDCondBold","HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: normal 15px/1 "Open Sans Condensed Bold","NimbusSansDCondBold","HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .article-content {
