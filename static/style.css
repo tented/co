@@ -151,9 +151,10 @@ header .lower {
     }
 }
 
-.side-cat img{
-    width: 100%;
-}
+.side-cat img {
+	width: 100%;
+	order: 1px solid black;
+} 
 
 
 .logo {
