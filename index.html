@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Tented.co</title>
@@ -13,11 +13,15 @@
 
     <header>
         <div style="width:0px; height:0px; margin-left: -9999px">
-            <audio autoplay loop>
+            <audio id="rain" autoplay loop>
                 <source src="http://173.193.205.68/audio1107/RainyMood.mp3" type="audio/mpeg">
                 <source src="http://173.193.205.68/audio1107/RainyMood.ogg" type="audio/ogg">
             </audio>
         </div>
+		<script type="text/javascript">
+			var rain = document.getElementById("rain");
+			rain.volume=0.1;
+		</script>
         <div class="upper">
             <div>
                 <a class="social" href="https://twitter.com/tentedco"><img src="static/twitt.png"></img></a>
@@ -30,11 +34,13 @@
         </div>
 
         <div class="lower">
-            <a href="/"><img class="logo" src="static/logo.png"></img></a>
-            <div class="nav">
-                <a class="nav-link" href="/">TENT REVIEWS</a>
-                <a class="nav-link" href="subscriber.html">SUBSCRIBER CONTENT</a>
-            </nav>
+            <div id="navcontainer">
+				<a href="/"><img class="logo" src="static/logo.png"></img></a>
+				<div class="nav">
+					<a class="nav-link" href="/">TENT REVIEWS</a>
+					<a class="nav-link" href="subscriber.html">SUBSCRIBER CONTENT</a>
+				</div>
+			</div>
         </div>
     </header>
 
@@ -203,6 +209,5 @@
             <div class="footer-links">Tented.co 2013 | User Agreement</div>
         </div>
     </div>
-
-  </body>
+	</body>
 </html>
