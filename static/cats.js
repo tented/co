@@ -5,7 +5,7 @@
 var theSideImages = new Array()
 theSideImages[0] = '<img src="static/norms-list-cat.png" alt"" title="">'
 theSideImages[1] = '<img src="static/aoc-cat.png" alt"" title="American Outdoor Caming, indoor camping is over-rated">'
-theSideImages[1] = '<img src="static/jacket-aficionado-cat.png" alt"" title="Because the word \'Aficianado\' has not been overused.">'
+theSideImages[2] = '<img src="static/jacket-aficionado-cat.png" alt"" title="Because the word \'Aficianado\' has not been overused.">'
 
 //Black magic as far as I am concerned
 var j = 0
