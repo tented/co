@@ -44,7 +44,7 @@ header {
 }
 
 header .upper {
-    height: 75px;
+    height: 90px;
     max-width: 1140px; margin-left: auto; margin-right: auto;
     min-width: 250px;
     overflow: hidden;
