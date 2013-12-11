@@ -95,12 +95,6 @@ header .lower #navcontainer {
     }
 }
 
-@media (max-width: 730px){
-    .happening-now{
-    font: 10px "Open Sans Condensed",Helvetica,Arial,sans-serif;
-    }
-}
-
 @media (max-width: 630px){
     .happening-now{
     display: none;
@@ -121,7 +115,7 @@ header .lower #navcontainer {
     margin-bottom: 30px;
     max-width: 728px;
 }
-.side-cat {
+.side-cat,.side-essentials {
     margin-bottom: 50px;
     position: relative;
     -webkit-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
@@ -134,10 +128,41 @@ header .lower #navcontainer {
     min-width: 250px;
 }
 
+#actual-cat-side-cat img{
+	border: 1px solid black;
+}
+
 @media (max-width: 900px){
     .side-cat{
         max-width: 100%
     }
+}
+
+.side-essentials {
+min-width: 150px;
+max-width: 100%;
+padding: 10px;
+padding-top: 30px;
+font-weight: bold;
+}
+
+.side-essentials ul {
+margin: 0px;
+padding: 0px;
+}
+
+.side-essentials li {
+margin-bottom: 10px;
+padding-bottom: 10px;
+border-bottom: 1px dotted #b2b2b2;
+min-height: 73px;
+}
+
+.side-essentials li img{
+float: left;
+margin-right: 20px;
+width: 130px;
+height: 73px
 }
 
 .right-column{
@@ -150,16 +175,62 @@ header .lower #navcontainer {
 
 @media (max-width: 900px){
     .right-column{
-        position: relative;
+        		width: 100%;
+max-width: 100%;
+margin-left: 0px;
+margin-right: 0px;
+position: relative;
+    }
+}
+
+.right-column-top{
+width: 350px;
+}
+
+@media (max-width: 900px){
+    .right-column-top{
+        margin-left: 20px;
+		float: left;
+    }
+}
+
+@media (max-width: 700px){
+    .right-column-top{
+        margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+		float: none;
+    }
+
+    .right-column-top img{
+        width: 100%;
+    }	
+}
+
+.right-column-bottom{
+height: 800px;
+background-color: red;
+}
+
+@media (max-width: 900px){
+    .right-column-bottom{
         max-width: 100%;
-        margin-right: 0px;
-        float: none;
+		margin-left: 390px;
+    }
+}
+
+@media (max-width: 700px){
+    .right-column-bottom{
+        width: 100%;
+		margin-left: 0px;
+		float: left;
+		margin-bottom: 20px;
     }
 }
 
 .side-cat img {
 	width: 100%;
-	order: 1px solid black;
+	border: 1px solid black;
 }
 
 
@@ -308,9 +379,10 @@ article {
     min-width:350px;
 }
 
-@media (max-width: 900px){
+@media (max-width: 700px){
     .footer{
         position:relative;
+		clear:both;
     }
 }
 
@@ -369,7 +441,7 @@ article {
     font-size: 25px;
     text-align: center;
     position: absolute;
-    top: 15%;
+    top: 7%;
     right: 5%;
     padding: 1%;
 }
