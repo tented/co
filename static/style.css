@@ -4,6 +4,8 @@ body {
     margin: 0;
     background:url(bg-tent.png) #d7d7d7;
     font: normal 13px/18px Arial,Helvetica,sans-serif;
+	background-attachment: fixed;
+    background-position-x: 50%;
 }
 
 a {
@@ -30,10 +32,11 @@ ul {
 }
 
 .btn.small, button[type='submit'].small {
-    font-size: 16px;
-    padding: 5px 7px;
-    display: inline-block;
-    margin-right: 7px;
+	font-size: 16px;
+	padding: 5px 7px;
+	display: inline-block;
+	margin-right: 2%;
+	width: 25%;
 }
 
 header {
@@ -41,6 +44,7 @@ header {
     margin-bottom: 20px;
     background-image:url('long-bar.png');
     background-position-y: 100%;
+	min-width: 385px;
 }
 
 header .upper {
@@ -76,6 +80,7 @@ header .lower #navcontainer {
     display: inline-block;
     height: 26px;
     width: 26px;
+	cursor: pointer;
 }
 
 .happening-now {
@@ -130,6 +135,15 @@ header .lower #navcontainer {
 
 #actual-cat-side-cat img{
 	border: 1px solid black;
+	width: 100%;
+}
+
+#sidebar-email img{
+	
+}
+
+#sidebar-tentbusters-live img{
+	width: 100%;
 }
 
 @media (max-width: 900px){
@@ -139,30 +153,30 @@ header .lower #navcontainer {
 }
 
 .side-essentials {
-min-width: 150px;
-max-width: 100%;
-padding: 10px;
-padding-top: 30px;
-font-weight: bold;
+	min-width: 150px;
+	max-width: 100%;
+	padding: 10px;
+	padding-top: 30px;
+	font-weight: bold;
 }
 
 .side-essentials ul {
-margin: 0px;
-padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 .side-essentials li {
-margin-bottom: 10px;
-padding-bottom: 10px;
-border-bottom: 1px dotted #b2b2b2;
-min-height: 73px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #b2b2b2;
+	min-height: 73px;
 }
 
 .side-essentials li img{
-float: left;
-margin-right: 20px;
-width: 130px;
-height: 73px
+	float: left;
+	margin-right: 20px;
+	width: 130px;
+	height: 73px
 }
 
 .right-column{
@@ -175,16 +189,16 @@ height: 73px
 
 @media (max-width: 900px){
     .right-column{
-        		width: 100%;
-max-width: 100%;
-margin-left: 0px;
-margin-right: 0px;
-position: relative;
+		width: 100%;
+		max-width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		position: relative;
     }
 }
 
 .right-column-top{
-width: 350px;
+	width: 350px;
 }
 
 @media (max-width: 900px){
@@ -201,15 +215,9 @@ width: 350px;
 		width: 100%;
 		float: none;
     }
-
-    .right-column-top img{
-        width: 100%;
-    }	
 }
 
 .right-column-bottom{
-height: 800px;
-background-color: red;
 }
 
 @media (max-width: 900px){
@@ -233,16 +241,6 @@ background-color: red;
 	border: 1px solid black;
 }
 
-
-.logo {
-    width: 191px;
-    height: auto;
-    top: -70px;
-    left: 10px;
-    position: absolute;
-    z-index: 3;
-}
-
 .nav {
     font: 19px/38px "Open Sans Condensed",Helvetica,Arial,sans-serif;
     vertical-align: top;
@@ -251,11 +249,32 @@ background-color: red;
     padding-left: 200px;
 }
 
-@media (max-width: 650px){
+@media (max-width: 714px){
     .nav {
-        padding-left: 0;
-        padding-top: 50px;
-        text-align: center;
+        font: 16px/38px "Open Sans Condensed",Helvetica,Arial,sans-serif;
+    }
+}
+
+@media (max-width: 660px){
+    .nav {
+	    font: 15px/38px "Open Sans Condensed",Helvetica,Arial,sans-serif;
+    }
+}
+
+@media (max-width: 635px){
+    .nav {
+	    font: 14px/38px "Open Sans Condensed",Helvetica,Arial,sans-serif;
+    }
+}
+
+@media (max-width: 615px){
+    .nav {
+	    font: 12px/38px "Open Sans Condensed",Helvetica,Arial,sans-serif;
+		padding-left: 0px;
+		padding-top: 55px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
     }
 }
 
@@ -330,6 +349,8 @@ article {
     background: white;
     margin-bottom: 35px;
     padding: 25px;
+	overflow: hidden;
+	position: relative;
 }
 
 .article-header {
@@ -349,6 +370,15 @@ article {
     line-height: 20px;
     color: black;
     word-wrap: break-word;
+	overflow: hidden;
+}
+
+.big-article{
+	padding-bottom: 50px;
+}
+
+.big-article .article-content{
+    max-height: 200px;
 }
 
 .sidebar {
@@ -377,6 +407,8 @@ article {
     width:100%;
     min-height: 30px;
     min-width:350px;
+	box-shadow: 0 0 10px black;
+	z-index: 400;
 }
 
 @media (max-width: 700px){
@@ -395,6 +427,34 @@ article {
     margin-right: auto;
 }
 
+.footer-logos{
+	float: left;
+}
+
+.footer-logos {
+	float: left;
+	margin-left: auto;
+	display: inline-block;
+	margin-right: auto;
+	width: 347px;
+}
+
+@media (max-width: 700px){
+    .footer-logos {
+	float: none;
+	margin-left: auto;
+	display: block;
+	margin-right: auto;
+	width: 347px;
+	}
+}
+
+.footer-logos img{
+height: 20px;
+margin-left: 10px; 
+margin-right: 10px
+}
+
 .article-img-container{
     max-width: 750px;
 }
@@ -407,19 +467,22 @@ article {
     max-width: 450px;
     float: right;
     padding-left: 10px;
+	max-height: 100%;
 }
 
 .article-img-container-float-right img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .footer-links{
     float: right
 }
 
-@media (max-width: 900px){
+@media (max-width: 700px){
     .footer-links{
-    float: left;
+    float: none;
+	display: block;
+	text-align: center;
     }
 }
 
@@ -460,4 +523,91 @@ article {
 #garyshootadvice{
     color: rgb(255, 31, 93);
     font-weight: bold;
+}
+
+.logo-container{
+	height:129px;
+	width: 191px;
+	top: -70px;
+	left: 10px;
+	position: absolute;
+	z-index: 3;
+}
+
+.logo-container img,#logo-container img{
+	height:129px;
+	width: 191px;
+}
+
+#logo-top {
+	height: 70px;
+	width: 191px;
+	transition: height 0.5s;
+	position: absolute;
+	bottom: 59px;
+	z-index: -1;
+	background-image: url('top-logo/logo-top-1.png');
+	background-repeat: no-repeat;
+}	
+
+.premium-tag {
+	background-image: url('premium-tag.png');
+	position: absolute;
+	width: 99px;
+	height: 98px;
+	top: 0px;
+	right: 0px;
+}
+
+.expand-button {
+	position: absolute;
+	width: 10%;
+	left: 50%;
+	bottom: 10px;
+	text-align: center;
+	width: 100px;
+	margin-left: -50px;
+}
+
+.expand-button .btn.small{
+	width: 100%;
+}
+
+	
+#social-hidden{
+
+}
+	
+#header{
+	z-index: 400;
+}
+.header{
+	position: relative;
+	width: 100%;
+	margin-top: 0px;
+}
+	
+.header-fixed{
+	position: fixed;
+	width: 100%;
+	margin-top: -90px;
+	box-shadow: 0 0 10px black;
+}
+	
+.logo-container-fixed{
+	height: 129px;
+	width: 191px;
+	top: -63px;
+	left: 10px;
+	position: absolute;
+	z-index: 3;
+}
+	
+.hidden{
+	display: none;
+}
+	
+.revealed{
+	display: inline-block;
+	height: 26px;
 }
