@@ -378,7 +378,7 @@ article {
 }
 
 .big-article .article-content{
-    max-height: 200px;
+    max-height: 300px;
 }
 
 .sidebar {
@@ -472,6 +472,18 @@ margin-right: 10px
 
 .article-img-container-float-right img{
     max-width: 100%;
+}
+
+.article-img-container-float-right-small{
+   max-height: 300px;
+	float: right;
+	padding-left: 10px;
+	max-width: 70%;
+}
+
+.article-img-container-float-right-small img{
+    max-height: 100%;
+	width: 100%;
 }
 
 .footer-links{
