@@ -378,7 +378,7 @@ article {
 }
 
 .big-article .article-content{
-    max-height: 300px;
+    /*max-height: 300px;*/
 }
 
 .sidebar {
@@ -622,4 +622,16 @@ margin-right: 10px
 .revealed{
 	display: inline-block;
 	height: 26px;
+}
+
+.article-hidden-section{
+max-height: 0px;
+overflow: hidden;
+overflow: hidden; 
+}
+
+.tent-rating{
+display: block;
+margin-left: auto;
+margin-right: auto;
 }

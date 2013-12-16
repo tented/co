@@ -1,15 +1,15 @@
 function articleExpand(articleId)
 {
-var currentHeight = document.getElementById(articleId).offsetHeight;
+var currentHeight = document.getElementById("hidden-"+articleId).offsetHeight;
 
-if (currentHeight < 301)
+if (currentHeight == 0)
 {
-document.getElementById(articleId).style.maxHeight = '100%';
+document.getElementById("hidden-"+articleId).style.maxHeight = '100%';
 document.getElementById("button-"+articleId).innerHTML = "Close";
 }
 else
 {
-document.getElementById(articleId).style.maxHeight = '300px';
+document.getElementById("hidden-"+articleId).style.maxHeight = '0px';
 document.getElementById("button-"+articleId).innerHTML = "Read More";
 }
 
