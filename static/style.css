@@ -2,7 +2,7 @@ body {
     height:100%;
     width:100%;
     margin: 0;
-    background:url(bg-tent.png) #d7d7d7;
+    background:url(ui/bg-tent.png) #d7d7d7;
     font: normal 13px/18px Arial,Helvetica,sans-serif;
 	background-attachment: fixed;
     background-position-x: 50%;
@@ -42,7 +42,7 @@ ul {
 header {
     background: #424242;
     margin-bottom: 20px;
-    background-image:url('long-bar.png');
+    background-image:url('ui/long-bar.png');
     background-position-y: 100%;
 	min-width: 385px;
 }
@@ -81,6 +81,23 @@ header .lower #navcontainer {
     height: 26px;
     width: 26px;
 	cursor: pointer;
+	background-image: url('ui/social-icons.png');
+}
+
+#social-irc-link{
+
+}
+
+#social-twitter-link{
+background-position:-26px 0px;
+}
+
+#social-logo-change{
+background-position:-52px 0px;
+}
+
+#social-weather-toggle{
+background-position:-78px 0px;
 }
 
 .happening-now {
@@ -316,6 +333,12 @@ article a {
     z-index: 2;
 }
 
+#buy-tickets{
+	left: 175px;
+	background-color: #f7941e;
+	color: white;
+}
+
 .content {
     max-width: 1140px;
     min-width: 350px;
@@ -500,13 +523,14 @@ margin-right: 10px
 
 .gary-shoot-cat{
     position: relative;
-    height: 250px;
-    width: 300px;
+    min-height: 250px;
+    width: 100%;
 }
 
 .gary-shoot-cat img{
     border: 1px solid black;
     width: 100%;
+	cursor: pointer;
 }
 
 .gary-shoot-cat p{
@@ -563,7 +587,7 @@ margin-right: 10px
 }	
 
 .premium-tag {
-	background-image: url('premium-tag.png');
+	background-image: url('ui/premium-tag.png');
 	position: absolute;
 	width: 99px;
 	height: 98px;

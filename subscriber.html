@@ -3,8 +3,8 @@
   <head>
     <title>Tented.co - subscriber content!</title>
     <link rel="icon" type="image/png" href="static/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/tented_favicon_16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/tented_favicon_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/ui/tented_favicon_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/ui/tented_favicon_32.png">
     <link rel="stylesheet" href="static/style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="static/js/random-background.js"></script>	
@@ -12,7 +12,9 @@
     <script type="text/javascript" src="static/js/gary-shoot.js"></script>
     <script type="text/javascript" src="static/js/logo-change.js"></script>	
     <script type="text/javascript" src="static/js/article-expand.js"></script>		
-	<script type="text/javascript" src="static/js/header-scroll.js"></script>		
+	<script type="text/javascript" src="static/js/header-scroll.js"></script>	
+	<script type="text/javascript" src="static/js/snowstorm.js"></script>	
+	<script type="text/javascript" src="static/js/effects-toggle.js"></script>	
   </head>
   
   <body onscroll="scroll()">
@@ -30,9 +32,10 @@
 		</script>
         <div class="upper">
             <div> 
-				<a class="social" onclick="changeTopImage();"><img src="static/testa-icon.png"></img></a>
-                <a class="social" href="https://twitter.com/tentedco"><img src="static/twitt.png"></img></a>
-                <a class="social" href="http://www.tested.com/forums/general-discussion/44657-tested-irc/"><img src="static/irc.png"></img></a>
+				<a class="social" id="social-weather-toggle" title="Toggle weather effects" onclick="stopEffects();"></a>
+				<a class="social" id="social-logo-change" title="Change the logo image" onclick="changeTopImage();"></a>
+                <a class="social" id="social-twitter-link"title="Follow us on Twitter" href="https://twitter.com/tentedco"></img></a>
+                <a class="social" id="social-irc-link"title="Join the IRC" href="http://www.tested.com/forums/general-discussion/44657-tested-irc/"></a>
             </div>
             <div class="happening-now">
                 <span class="hilight">TENTS?</span>
@@ -53,8 +56,8 @@
 					<a class="nav-link" href="subscriber.html">SUBSCRIBER CONTENT</a>
 					<a class="nav-link" href="" title="Comming soon!">PODCAST</a>
 					<div id="social" class="hidden"> 
-						<a class="social" href="https://twitter.com/tentedco"><img src="static/twitt.png"></img></a>
-						<a class="social" href="http://www.tested.com/forums/general-discussion/44657-tested-irc/"><img src="static/irc.png"></img></a>
+						<a class="social" id="social-twitter-link"title="Follow us on Twitter" href="https://twitter.com/tentedco"></img></a>
+						<a class="social" id="social-irc-link"title="Join the IRC" href="http://www.tested.com/forums/general-discussion/44657-tested-irc/"></a>
 					</div>
 				</div>
 			</div>
@@ -66,9 +69,10 @@
         <div class="top-cat">
             <a href="http://www.tested.com/forums/general-discussion/459327-what-kind-of-tent-is-norm-going-to-review-next/#comment-407845"><script type="text/javascript">showHeaderCat();</script></a>
         </div>
+			
         <div class="articles">
             <div class="articles-header">Latest Stories</div>
-		
+				
 		<!--the class big-article is what adds the extra padding at the bottom needed to fit the button-->		
 			<article class="big-article">
 			 
@@ -85,7 +89,7 @@
 				    <div class="premium-tag"></div>
 					
 					<div class="article-img-container-float-right-small">
-                        <img src="static/norm-bear.png">
+                        <img src="static/article-img/norm-bear.png">
                     </div>
 					
 					<p><em>
@@ -174,7 +178,7 @@
 				    <div class="premium-tag"></div>
 					
 					<div class="article-img-container-float-right-small">
-                        <img src="static/tentnorm.png">
+                        <img src="static/article-img/tentnorm.png">
                     </div>
 					
 					<p>
@@ -210,7 +214,7 @@
 						</p>
 
 						<div class="article-img-container-float-right">
-							<img src="static/2-everest-base-camp.jpg">
+							<img src="static/article-img/2-everest-base-camp.jpg">
 						</div>
 
 						<p>
@@ -246,7 +250,7 @@
 				<div class="premium-tag"></div>
                     <p>Watch me pitch a tent DEC 24. 2013, 5pm EST</p>
                     <div class="article-img-container">
-                        <img src="static/tentpitch.jpg">
+                        <img src="static/article-img/tentpitch.jpg">
                     </div>
                 </div>
             </article>
@@ -264,31 +268,11 @@
 				<div class="sidebar" id="sidebar-email">
 					<div class="sidebar-header">EMAIL? EMAIL!</div>
 					<span class="email-header">Got something to tell us?</span>
-					<a class=" small btn" href="mailto:pegs@tented.co"><img src="static/email.png"></img> Norm</a>
-					<a class=" small btn" href="mailto:pegs@tented.co"><img src="static/email.png"></img> Norm</a>
-					<a class=" small btn" href="mailto:pegs@tented.co"><img src="static/email.png"></img> Norm</a>
+					<a class=" small btn" href="mailto:pegs@tented.co"><img src="static/ui/email.png"></img> Norm</a>
+					<a class=" small btn" href="mailto:pegs@tented.co"><img src="static/ui/email.png"></img> Gary</a>
+					<a class=" small btn" href="mailto:pegs@tented.co"><img src="static/ui/email.png"></img> Chloe</a>
 				</div>
-
-				<div class="side-cat" id="sidebar-tentbusters-live">
-					<div class="sidebar-header">TENTBUSTERS LIVE!</div>
-					<a href="http://www.tested.com/forums/general-discussion/459327-what-kind-of-tent-is-norm-going-to-review-next/#comment-407845"><img src="static/cats/tentbusters.png"></img></a>
-				</div>
-
-				<div class="side-cat">
-					<div class="sidebar-header">Gary's hunting tips</div>
-					<div class="gary-shoot-cat">
-						<img src="static/cats/gary-shoot.png">
-						<p>
-							Shoot that <span id="garyshootadvice"><script type="text/javascript">initialShootAdvice();</script></span>!
-						</p>
-						<div class="button" onclick="newShootAdvice()"></div>
-					</div>
-				</div>	
 				
-			</div>	
-		
-            <div class="right-column-bottom">
-						
 				<div class="side-essentials">
 				
 					<div class="sidebar-header">THE ESSENTIALS</div>
@@ -306,7 +290,27 @@
 						<li><img src="static/essentials/essentials-10.png" alt="" title="">Introduction to 3D printed campsites.</li>
 					</ul>
 					
+				</div>				
+				
+			</div>	
+		
+            <div class="right-column-bottom">
+						
+				<div class="side-cat" id="sidebar-tentbusters-live">
+					<div class="sidebar-header">TENTBUSTERS LIVE!</div>
+					<a href="http://www.tested.com/forums/general-discussion/459327-what-kind-of-tent-is-norm-going-to-review-next/#comment-407845"><div class="sidebar-header" id="buy-tickets">buy tickets</div></a>
+					<a href="http://www.tested.com/forums/general-discussion/459327-what-kind-of-tent-is-norm-going-to-review-next/#comment-407845"><img src="static/cats/tentbusters.png"></img></a>
 				</div>
+
+				<div class="side-cat">
+					<div class="sidebar-header">Gary's hunting tips</div>
+					<div class="gary-shoot-cat">
+						<img onclick="newShootAdvice()" src="static/cats/gary-shoot.png">
+						<p>
+							Shoot that <span id="garyshootadvice"><script type="text/javascript">initialShootAdvice();</script></span>!
+						</p>
+					</div>
+				</div>	
 
 			</div>
 			
@@ -317,8 +321,8 @@
     <div class="footer">
         <div class="footer-content">
 		    <div class="footer-logos">
-				<img src="static/bearmanbrown.png">
-				<img src="static/trekitory.png">
+				<img src="static/ui/bearmanbrown.png">
+				<img src="static/ui/trekitory.png">
 			</div>
             <div class="footer-links">
 				Tented.co 2013 | User Agreement
